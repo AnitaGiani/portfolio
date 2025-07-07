@@ -1,4 +1,12 @@
 /* Basic Reset */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
@@ -38,6 +46,7 @@ header nav a:hover {
 
 /* Main content */
 main {
+    flex: 1;
   padding: 40px;
   max-width: 800px;
   margin: auto;
@@ -50,6 +59,7 @@ footer {
   text-align: center;
   padding: 10px;
   width: 100%;
+  position: fixed;
 }
 
 /* cv button */
