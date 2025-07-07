@@ -4,6 +4,7 @@ body {
   line-height: 1.6;
   background-color: #f0f2f5;
   color: #333;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 h1, h2 {
    font-size: 3rem;
@@ -17,10 +18,11 @@ h1, h2 {
 
 /* Header styling */
 header {
- background: linear-gradient(135deg, #007ACC, #00C6FF);
+ background: linear-gradient(135deg, #354f52, #52796f);
   color: white;
   padding: 60px 20px;
   text-align: center;
+  position: relative;
 }
 
 header nav a {
@@ -67,7 +69,7 @@ footer {
   transform: scale(1.05);
 }
 nav a:hover {
-  color: #ffd700;
+  color: #181817;
   border-bottom: 2px solid white;
 }
 /* fade in*/
@@ -116,11 +118,11 @@ nav a:hover {
 /* dark toggle */
 .dark-mode {
  background-color: #444;
-  color: #FFD700;
-  border: 1px solid #FFD700;
+  color: #f3f2ee;
+  border: 1px solid #f3f2ee;
 }
 .dark-mode .btn:hover {
-  background-color: #FFD700;
+  background-color: #f3f2ee;
   color: #222;
 }
 
@@ -138,7 +140,7 @@ nav a:hover {
 }
 
 .dark-mode a {
-  color: #ffd700;
+  color: #f3f2ee;
 }
 
 /* email form */
@@ -153,3 +155,54 @@ form button {
 }
 
 
+/* toggle slidder */
+
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When checked */
+.switch input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(24px);
+}

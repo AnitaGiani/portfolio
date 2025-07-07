@@ -1,13 +1,13 @@
-AOS.init();
+document.addEventListener('DOMContentLoaded', function () {
+  const darkModeToggle = document.getElementById('darkModeToggle');
 
-// Find the button on the page
-const darkModeToggle = document.getElementById('darkModeToggle');
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener('change', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  }
 
-// Listen for button clicks
-darkModeToggle.addEventListener('click', function() {
-  // Toggle the "dark-mode" class on the body
-  document.body.classList.toggle('dark-mode');
+  if (typeof AOS !== 'undefined') {
+    AOS.init();
+  }
 });
-
-
-
