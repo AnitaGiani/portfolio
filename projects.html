@@ -3,10 +3,13 @@
 <head>
   <title>Projects | Anita Lalwani</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  
 </head>
 <body>
   <header>
-    <h1>Anita Lalwani</h1>
+    <h1 class="fade-in">Anita Lalwani</h1>
     <p>Final-year Computer Science student | Future Software Developer</p>
     <nav>
       <a href="index.html">Home</a>
@@ -18,23 +21,32 @@
 
 <main>
       <h2>My Projects</h2>
-
-  <h2>🔗 URL Shortener (Go + BoltDB)</h2>
+<div class="project-card" data-aos="fade-up" data-aos-duration="800"> 
+    <h3><i class="fas fa-link"></i>🔗 URL Shortener (Go + BoltDB)</h3>
   <p>A simple web app that shortens long URLs. Built using Go, BoltDB, and basic HTML/CSS. <a href="https://github.com/YourGitHubUsername/YourRepoName">View on GitHub</a></p>
-
-  <h2>📱 Game of Life Simulation App (Lua, Solar2D)</h2>
+</div>
+ 
+<div class="project-card" data-aos="fade-up"> 
+  <h3>📱 Game of Life Simulation App (Lua, Solar2D)</h3>
   <p>A mobile simulation of Conway's Game of Life using Lua. Designed interactive UI with Solar2D.</p>
-
-  <h2>📊 Malware Detection System (Keras, TensorFlow)</h2>
+</div>
+<div class="project-card" data-aos="fade-up"> 
+  <h3>📊 Malware Detection System (Keras, TensorFlow)</h3>
   <p>Built and trained a CNN model to detect malware in network traffic. Achieved 95% accuracy.</p>
-
-  <h2>🗑️ Smart Waste Management System (System Design)</h2>
+</div>
+<div class="project-card" data-aos="fade-up"> 
+  <h3>🗑️ Smart Waste Management System (System Design)</h3>
   <p>Designed a system for IoT-based waste management. Created system diagrams, ERD, and project documentation.</p>
+  </div>
 </main>
 
   <footer>
     <p>© 2025 Anita Lalwani</p>
   </footer>
+<!-- External AOS library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<!-- Your custom script -->
+<script src="script.js"></script>
 </body>
 </html>
